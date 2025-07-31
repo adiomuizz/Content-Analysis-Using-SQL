@@ -1,7 +1,7 @@
 ## 📘 Full Project Description: Netflix Content Analysis Using SQL
 
 
-This project focuses on performing exploratory data analysis (EDA) on a Netflix dataset using SQL. The dataset contains detailed information about movies and TV shows available on Netflix, including metadata such as show ID, title, director, cast, release year, rating, genre, and descriptions.
+This project presents a comprehensive exploratory data analysis (EDA) on Netflix content using SQL. It leverages a publicly available dataset sourced from Kaggle, containing metadata of Netflix’s catalog of Movies and TV Shows. The analysis includes content classification, rating trends, genre popularity, and content contribution by country, to uncover meaningful insights for business and content strategy.
 
 ## 🧾 Table of Contents
 
@@ -12,6 +12,7 @@ This project focuses on performing exploratory data analysis (EDA) on a Netflix 
 - [Business Questions Answered](#business-questions-answered)
 - [Technical Stack](#Technical-Stack)
 - [How to Use](#how-to-use)
+- [Data Source](#Data-Source)
 - [License](#license)
 
 ## 🧠 Overview
@@ -133,6 +134,14 @@ WHERE rank = 1;
 -- More queries continue in the script file...
 
 ✅ Note: The full code with 20+ queries is saved in the netflix_analysis.sql file.
+
+🏷️ Data Source
+📥 Kaggle Dataset: Netflix Movies and TV Shows
+
+📌 License: This dataset is publicly available on Kaggle for educational and non-commercial use.
+
+### Acknowledgment:
+Special thanks to Shivam Bansal for making this dataset available on Kaggle.
 
 ## 👤 Contact
 **Name:** Adio Muizz Adeniyi  
