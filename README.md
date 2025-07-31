@@ -135,8 +135,8 @@ WHERE rank = 1;
 ✅ Note: The full code with 20+ queries is saved in the netflix_analysis.sql file.
 
 👤 Contact
-Name: Adio Muizz Adeniyi
-📧 Muizzadio@gmail.com
+Name: Adio Muizz Adeniyi\\
+📧 Muizzadio@gmail.com\\
 🌍 LinkedIn Profile: https://www.linkedin.com/in/adio-muizz-adeniyi/
 
 
