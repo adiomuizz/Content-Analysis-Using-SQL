@@ -85,5 +85,55 @@ Database client: pgAdmin, DBeaver, or any PostgreSQL-supported interface.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/netflix-sql-analysis.git cd netflix-sql-analysis. ''''
+git clone https://github.com/your-username/netflix-sql-analysis.git cd netflix-sql-analysis.
+```
+2. Open netflix_analysis.sql in your SQL environment (PostgreSQL preferred).
+
+3. Run the script section-by-section or as a whole for insight generation.
+
+
+💾 SQL Script
+See the full SQL script in netflix_analysis.sql. It includes:
+-- DROP TABLE IF EXISTS netflix;
+CREATE TABLE netflix (
+    show_id VARCHAR(7),
+    type VARCHAR(10),
+    title VARCHAR(160),
+    director VARCHAR(210),
+    casts VARCHAR(1000),
+    country VARCHAR(160),
+    date_added VARCHAR(50),
+    release_year INT,
+    rating VARCHAR(12),
+    duration VARCHAR(18),
+    listed_in VARCHAR(100),
+    description VARCHAR(300)
+);
+
+-- Sample Query: Number of Movies vs TV Shows
+SELECT type, COUNT(*) FROM netflix GROUP BY type;
+
+-- Sample Query: Most Common Rating
+WITH RatingCounts AS (
+    SELECT type, rating, COUNT(*) AS rating_count
+    FROM netflix
+    GROUP BY type, rating
+),
+RankedRatings AS (
+    SELECT type, rating, rating_count,
+           RANK() OVER (PARTITION BY type ORDER BY rating_count DESC) AS rank
+    FROM RatingCounts
+)
+SELECT type, rating AS most_frequent_rating
+FROM RankedRatings
+WHERE rank = 1;
+
+-- More queries continue in the script file...
+
+✅ Note: The full code with 20+ queries is saved in the netflix_analysis.sql file.
+
+👤 Contact
+Name: Adio Muizz Adeniyi
+📧 Muizzadio@gmail.com
+🌍 LinkedIn Profile: https://www.linkedin.com/in/adio-muizz-adeniyi/
 
