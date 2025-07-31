@@ -94,6 +94,8 @@ git clone https://github.com/your-username/netflix-sql-analysis.git cd netflix-s
 
 💾 SQL Script
 See the full SQL script in netflix_analysis.sql. It includes:
+```bash
+
 -- DROP TABLE IF EXISTS netflix;
 CREATE TABLE netflix (
     show_id VARCHAR(7),
@@ -127,7 +129,7 @@ RankedRatings AS (
 SELECT type, rating AS most_frequent_rating
 FROM RankedRatings
 WHERE rank = 1;
-
+````
 -- More queries continue in the script file...
 
 ✅ Note: The full code with 20+ queries is saved in the netflix_analysis.sql file.
@@ -136,4 +138,6 @@ WHERE rank = 1;
 Name: Adio Muizz Adeniyi
 📧 Muizzadio@gmail.com
 🌍 LinkedIn Profile: https://www.linkedin.com/in/adio-muizz-adeniyi/
+
+
 
