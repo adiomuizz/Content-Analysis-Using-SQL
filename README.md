@@ -28,7 +28,7 @@ The Netflix dataset includes metadata for movies and TV shows available on the p
 pgsql
 netflix-sql-analysis/
 ├── README.md
-└── netflix_analysis.sql
+└── netflix.sql
 
 ---
 
@@ -88,13 +88,13 @@ Database client: pgAdmin, DBeaver, or any PostgreSQL-supported interface.
 ```bash
 git clone https://github.com/your-username/netflix-sql-analysis.git cd netflix-sql-analysis.
 ```
-2. Open netflix_analysis.sql in your SQL environment (PostgreSQL preferred).
+2. Open netflix.sql in your SQL environment (PostgreSQL preferred).
 
 3. Run the script section-by-section or as a whole for insight generation.
 
 
 💾 SQL Script
-See the full SQL script in netflix_analysis.sql. It includes:
+See the full SQL script in netflix.sql. It includes:
 ```bash
 
 -- DROP TABLE IF EXISTS netflix;
